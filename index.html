@@ -29,18 +29,56 @@
 
 <body>
     <!-- start codes -->
+
     <!-- nav start codes -->
-    <nav></nav>
+    <!-- NOTE - eğer navbar da navbar-dark ise bg-dark olucak eger navbar-light ise bg-light olucak -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">LOGO</a>
+            <!-- NOTE - sayfa küçüldüğünde oluşan toggler yani açılır pencereyi çalıştırır -->
+            <!-- NOTE - data-bs-toggle="collapse" collapse yapısı bastıktan sonra çalışan anlamına geliyor -->
+            <!-- NOTE - data-bs-target="#collapsibleNavId" kim ile haberleşeceğini bildiriyoruz aşagıda id si collapsibleNavId olan div ile haberleşiyor -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Anasayfa <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Üye</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Üye Ol</a>
+                            <a class="dropdown-item" href="#">Giriş Yap</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex my-2 my-lg-0">
+                    <input class="form-control me-sm-2" type="text" placeholder="Arama ...">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
     <!-- nav end codes -->
+
     <!-- header start codes -->
     <header></header>
     <!-- header end codes -->
+
     <!-- main start codes -->
     <main></main>
     <!-- main end codes -->
+
     <!-- footer start codes -->
     <footer></footer>
     <!-- footer end codes -->
+
     <!-- end codes -->
 
     <!-- Bootstrap JavaScript Libraries -->
